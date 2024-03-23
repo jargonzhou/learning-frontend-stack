@@ -9,5 +9,5 @@ Playground of frontend stack.
 - [Puppeteer](./puppeteer/README.md)
 - [React](./react/README.md) - TODO
 - [TypeScript](./typescript/README.md)
-- [Vue](./vue/README.md)
+- [Vue](./vue/README.md) - TODO
 - [WebAssembly](./webassembly/README.md)
