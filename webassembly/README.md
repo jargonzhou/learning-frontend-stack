@@ -1,5 +1,7 @@
 # WebAssembly
 
+- https://webassembly.org/
+
 ## Emscripten
 
 - https://github.com/emscripten-core/emscripten
