@@ -11,3 +11,4 @@ Playground of frontend stack.
 - [TypeScript](./typescript/README.md)
 - [Vue](./vue/README.md) - TODO
 - [WebAssembly](./webassembly/README.md)
+- [Electron](./electron/README.md)

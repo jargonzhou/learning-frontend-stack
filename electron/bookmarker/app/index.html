@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <p id="info"></p>
+    
+    <!-- app start -->
+    <h1>Bookmarker</h1>
+
+    <div class="error-message"></div>
+
+    <section class="add-new-link">
+      <form class="new-link-form">
+        <input type="url" class="new-link-url" placeholder="URL" required>
+        <input type="submit" class="new-link-submit" value="Submit" disabled>
+      </form>
+    </section>
+
+    <section class="links"></section>
+
+    <section class="controls">
+      <button class="clear-storage">Clear Storage</button>
+    </section>
+    <!-- app end -->
+    
+    <script src="./renderer.js"></script>
+  </body>
+</html>
