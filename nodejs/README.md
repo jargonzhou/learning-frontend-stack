@@ -10,4 +10,4 @@ v18.17.1
 
 Examples:
 
-- [example-nodejs](./example-nodejs/README.md)
+- [beginning-nodejs](./beginning-nodejs/README.md)
