@@ -8,10 +8,15 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-Generated:
 
-```
-.
+
+```shell
+✗ npm create vite@latest ex-vite --template react
+✔ Select a framework: › React
+✔ Select a variant: › JavaScript
+
+# generated
+
 ├── README.md
 ├── index.html
 ├── package-lock.json
@@ -24,11 +29,6 @@ Generated:
 │   ├── assets
 │   │   └── react.svg
 │   ├── index.css
-│   ├── index.jsx
 │   └── main.jsx
 └── vite.config.js
 ```
-
-## Actions
-
-- `index.jsx`: mocking 'Add React to an Existing Project'.
