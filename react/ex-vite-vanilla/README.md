@@ -26,3 +26,9 @@ $ npm install react react-dom
 Actions:
 
 - [src/index.js](./src/index.js): mocking 'Add React to an Existing Project'
+
+
+```shell
+# property validation
+npm install prop-types
+```
