@@ -1,0 +1,64 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>380</w><h>500</h></coordinates><panel_attributes>Component
+--
+context
+props // immutable states
+refs
+state // mutable states
+--
+static childContextTypes
+static contextTypes
+static contextType
+static defaultProps // default immutable states
+static propTypes // type checking
+--
+constructor(props) // declare state, bind methods
+--
+forceUpdate(callback?)
+getChildContext()
+getSnapshotBeforeUpdate(prevProps, prevState)
+render()
+setState(nextState, callback?)
+-- // lifecycle methods
+componentDidCatch(error, info)
+componentDidMount()
+componentDidUpdate(prevProps, prevState, snapshot?)
+componentWillMount()
+componentWillReceiveProps(nextProps)
+componentWillUpdate(nextProps, nextState)
+componentWillUnmount()
+shouldComponentUpdate(nextProps, nextState, nextContext)
+UNSAFE_componentWillMount()
+UNSAFE_componentWillReceiveProps(nextProps, nextContext)
+UNSAFE_componentWillUpdate(nextProps, nextState)
+--
+static getDerivedStateFromError(error)
+static getDerivedStateFromProps(props, state)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>170</y><w>380</w><h>30</h></coordinates><panel_attributes>componentWillMount()
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>230</y><w>380</w><h>30</h></coordinates><panel_attributes>render()
+bg=#ADD8E6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>250</y><w>380</w><h>30</h></coordinates><panel_attributes>componentWillUnmount()
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>290</y><w>380</w><h>30</h></coordinates><panel_attributes>componentDidMount()
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>100</y><w>200</w><h>90</h></coordinates><panel_attributes>Virtual DOM
+valign=center
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>350</y><w>200</w><h>90</h></coordinates><panel_attributes>Mounted
+valign=center
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>470</y><w>380</w><h>30</h></coordinates><panel_attributes>componentWillReceiveProps(nextProps)
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>530</y><w>380</w><h>30</h></coordinates><panel_attributes>shouldComponentUpdate(nextProps, nextState, nextContext)
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>590</y><w>380</w><h>30</h></coordinates><panel_attributes>componentWillUpdate(nextProps, nextState)
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>650</y><w>380</w><h>30</h></coordinates><panel_attributes>render()
+bg=#ADD8E6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>710</y><w>380</w><h>30</h></coordinates><panel_attributes>componentDidUpdate(prevProps, prevState, snapshot?)
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1250</x><y>570</y><w>380</w><h>30</h></coordinates><panel_attributes>componentDidCatch(error, info)
+bg=#90EE90</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>370</y><w>250</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+props</panel_attributes><additional_attributes>10;100;10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>430</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+false</panel_attributes><additional_attributes>90;10;90;120;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>490</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>550</y><w>50</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+true</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>610</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>430</y><w>210</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setState()</panel_attributes><additional_attributes>10;180;140;180;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>670</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>730</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>310</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>250</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>190</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>100</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+render()
+hydrate()</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>180</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>550</x><y>40</y><w>140</w><h>30</h></coordinates><panel_attributes>Unmounting
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>950</x><y>50</y><w>140</w><h>30</h></coordinates><panel_attributes>Mounting
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>550</x><y>380</y><w>140</w><h>30</h></coordinates><panel_attributes>Updating
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>110</y><w>380</w><h>30</h></coordinates><panel_attributes>constructor: props. intial state
+bg=#ADD8E6</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>130</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>810</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>can use setState()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>810</x><y>290</y><w>140</w><h>30</h></coordinates><panel_attributes>can use setState()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>460</x><y>470</y><w>140</w><h>30</h></coordinates><panel_attributes>can use setState()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>460</x><y>710</y><w>140</w><h>30</h></coordinates><panel_attributes>can use setState()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1340</x><y>500</y><w>200</w><h>70</h></coordinates><panel_attributes>Uncaught error in methods:
+constructor
+render
+lifecycle</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1330</x><y>290</y><w>220</w><h>30</h></coordinates><panel_attributes>Once mounted, update can occur</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>270</y><w>410</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+unmountComponentAtMode()</panel_attributes><additional_attributes>10;10;10;100;390;100</additional_attributes></element></diagram>
