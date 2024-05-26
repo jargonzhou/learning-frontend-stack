@@ -9,6 +9,7 @@ Playground of frontend stack.
 - [Playwright](./playwright/README.md) - TODO
 - [Puppeteer](./puppeteer/README.md)
 - [React](./react/README.md)
+- [SPA](./spa/README.md): Single Page Web Applications
 - [TypeScript](./typescript/README.md)
 - [Vue](./vue/README.md) - TODO
 - [WebAssembly](./webassembly/README.md)
