@@ -5,12 +5,25 @@ import morgan from 'morgan';
 import bodyParser from "body-parser";
 import errorHandler from "errorhandler";
 
+import { isDev } from "./config.js";
+
+import { route as CRUDRoute } from "./route/crud.js";
+
+import { setUpSocket } from "./socket.js";
+
+// ========================================================
+// Express
+// ========================================================
 const app = express();
-app.use(morgan('combined'))
 // app.use(bodyParser)
-app.use(errorHandler({
-  log: true
-}))
+if (isDev()) {
+  app.use(morgan('dev'))
+  app.use(errorHandler({
+    log: true
+  }))
+} else {
+  app.use(morgan('combined'))
+}
 
 app.get("/", (req, res) => {
   res.redirect("/index.html")
@@ -20,13 +33,24 @@ app.get("/hello", (req, res) => {
   res.send("Hello Vite!");
 })
 
-app.get("/user/list", (req, res) => {
-  res.contentType('json')
-  res.send({title: 'user list'})
-})
+app.use(bodyParser.json())
 
-// TODO: P.244
+// ========================================================
+// CRUD Routes
+// ========================================================
+CRUDRoute(app)
 
-ViteExpress.listen(app, 3000, () =>
-  console.log("Server is listening on port 3000..."),
+// ViteExpress.listen(app, 3000, () =>
+//   console.log("Server is listening on port 3000..."),
+// );
+
+const server = app.listen(3000, "0.0.0.0", () =>
+  console.log("Server is listening...")
 );
+
+// ========================================================
+// Setup Socket.IO
+// ========================================================
+setUpSocket(server, app)
+
+ViteExpress.bind(app, server);
