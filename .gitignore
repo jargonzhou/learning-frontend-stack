@@ -1,6 +1,8 @@
 # nodejs
 node_modules/
 
+# spa
+spa/spa-server/ops/mongo-data
 
 # webassembly
 webassembly/emscripten/emsdk-3.1.56.zip

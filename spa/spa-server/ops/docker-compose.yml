@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:6.0.1
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-data:/data/db
+      - ./init.js:/docker-entrypoint-initdb.d/init.js
+    networks:
+      - devops-network
+
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express:1.0.0-alpha.4
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 18081:8081
+    depends_on:
+      - mongo
+    networks:
+      - devops-network
+
+networks:
+  devops-network:
+    external: true
