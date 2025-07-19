@@ -1,0 +1,16 @@
+{
+    // https://github.com/tsconfig/bases/blob/main/bases/node22.json
+    "extends": "@tsconfig/node22/tsconfig.json",
+    "compilerOptions": {
+        "module": "nodenext",
+        "moduleResolution": "node16",
+        "esModuleInterop": true,
+        "target": "esnext",
+        "allowJs": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "lib": ["ESNext", "DOM"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}

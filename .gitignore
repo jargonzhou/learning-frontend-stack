@@ -13,3 +13,7 @@ webassembly/emscripten/tutorial/*.wasm
 webassembly/pyodide-0.25.0.tar.bz2
 webassembly/pyodide
 !webassembly/pyodide/test.html
+
+# todo
+todo.txt
+done.txt
