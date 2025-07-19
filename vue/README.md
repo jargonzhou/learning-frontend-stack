@@ -5,88 +5,72 @@
 starter:
 
 ```shell
-✗ npm create vue@latest
-Debugger attached.
-Need to install the following packages:
-  create-vue@3.10.2
-Ok to proceed? (y) 
-Debugger attached.
+$ npm init vue@latest
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  请输入项目名称：
+│  learning-vue-app
+│
+◇  请选择要包含的功能： (↑/↓ 切换，空格选择，a 全选，回车确认)
+│  TypeScript, JSX 支持, Router（单页面应用开发）, Pinia（状态管理）, Vitest（单元测试）, ESLint（错误预防）, Prettier（代码格式化）
+│
+◇  是否引入 Oxlint 以加快检测？（试验阶段）
+│  No
 
-Vue.js - The Progressive JavaScript Framework
+正在初始化项目 D:\workspace\github\learning-frontend-stack\vue\learning-vue-app...
+│
+└  项目初始化完成，可执行以下命令：
 
-✔ Project name: … vue-project
-✔ Add TypeScript? … No / Yes
-✔ Add JSX Support? … No / Yes
-✔ Add Vue Router for Single Page Application development? … No / Yes
-✔ Add Pinia for state management? … No / Yes
-✔ Add Vitest for Unit Testing? … No / Yes
-✔ Add an End-to-End Testing Solution? › No
-✔ Add ESLint for code quality? … No / Yes
-✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
+   cd learning-vue-app
+   npm install
+   npm run format
+   npm run dev
 
-Scaffolding project in ...vue-project...
+| 可选：使用以下命令在项目目录中初始化 Git：
 
-Done. Now run:
-
-  cd vue-project
-  npm install
-  npm run dev
+   git init && git add -A && git commit -m "initial commit"
 ```
 
 ```shell
-✗ tree -L 2
+$ tree
 .
-├── README.md
-├── index.html
-├── jsconfig.json
-├── node_modules
-│   ├── @babel
-│   ├── @esbuild
-│   ├── @jridgewell
-│   ├── @rollup
-│   ├── @types
-│   ├── @vitejs
-│   ├── @vue
-│   ├── csstype
-│   ├── entities
-│   ├── esbuild
-│   ├── estree-walker
-│   ├── fsevents
-│   ├── magic-string
-│   ├── nanoid
-│   ├── picocolors
-│   ├── postcss
-│   ├── rollup
-│   ├── source-map-js
-│   ├── vite
-│   └── vue
-├── package-lock.json
-├── package.json
-├── public
-│   └── favicon.ico
-├── src
-│   ├── App.vue
-│   ├── assets
-│   ├── components
-│   └── main.js
-└── vite.config.js
-
-✗ tree src
-src
-├── App.vue
-├── assets
-│   ├── base.css
-│   ├── logo.svg
-│   └── main.css
-├── components
-│   ├── HelloWorld.vue
-│   ├── TheWelcome.vue
-│   ├── WelcomeItem.vue
-│   └── icons
-│       ├── IconCommunity.vue
-│       ├── IconDocumentation.vue
-│       ├── IconEcosystem.vue
-│       ├── IconSupport.vue
-│       └── IconTooling.vue
-└── main.js
+|-- README.md
+|-- env.d.ts
+|-- eslint.config.ts
+|-- index.html
+|-- package.json
+|-- public
+|   `-- favicon.ico
+|-- src
+|   |-- App.vue
+|   |-- assets                               资产: 图片, CSS文件
+|   |   |-- base.css
+|   |   |-- logo.svg
+|   |   `-- main.css
+|   |-- components                           组件: 单文件组件SFC(Single File Component)
+|   |   |-- HelloWorld.vue
+|   |   |-- TheWelcome.vue
+|   |   |-- WelcomeItem.vue
+|   |   |-- __tests__
+|   |   |   `-- HelloWorld.spec.ts
+|   |   `-- icons
+|   |       |-- IconCommunity.vue
+|   |       |-- IconDocumentation.vue
+|   |       |-- IconEcosystem.vue
+|   |       |-- IconSupport.vue
+|   |       `-- IconTooling.vue
+|   |-- main.ts                              挂载根组件到HTML DOM, 设置插件和第三方库(例Vue Router, Pinia)
+|   |-- router                               路由
+|   |   `-- index.ts
+|   |-- stores                               全局数据存储: 使用Pinia
+|   |   `-- counter.ts
+|   `-- views                                绑定到路由的组件
+|       |-- AboutView.vue
+|       `-- HomeView.vue
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- tsconfig.vitest.json
+|-- vite.config.ts
+`-- vitest.config.ts
 ```
