@@ -1,7 +1,7 @@
 # learning-frontend-stack
 Playground of frontend stack.
 
-- [Axios](./axios/README.md)
+- [Axios](./axios/axios.md)
 - [Bootstrap](./bootstrap/README.md)
 - [Crawlee](./crawlee/README.md) - TODO
 - [Electron](./electron/README.md)
@@ -18,6 +18,3 @@ Playground of frontend stack.
 - [webpack](./webpack/README.md)
 
 ## Tools
-
-### npm
-* [`package.json`](https://docs.npmjs.com/cli/v11/configuring-npm/package-json)

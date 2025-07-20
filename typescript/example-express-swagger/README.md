@@ -1,6 +1,5 @@
 # REST API with Express and Swaggar
-
-- https://rsbh.dev/blogs/rest-api-with-express-typescript
+* [Building REST API with Express, TypeScript and Swagger](https://rsbh.dev/blogs/rest-api-with-express-typescript)
 
 ```shell
 ✗ npm init -y  

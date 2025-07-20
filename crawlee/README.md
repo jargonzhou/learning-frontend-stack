@@ -1,3 +1,0 @@
-# Crawlee
-
-- https://crawlee.dev/
