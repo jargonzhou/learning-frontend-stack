@@ -36,3 +36,5 @@ npm install json-server
 
 # Actions
 * [beginning-nodejs](./beginning-nodejs/README.md)
+* [nodejs-cjs](./nodejs-cjs/README.md): NodeJS with CommonJS.
+* [proxy-chain-server](./proxy-chain-server/README.md): A proxy chain server.
