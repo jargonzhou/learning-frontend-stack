@@ -1,20 +1,24 @@
 # learning-frontend-stack
 Playground of frontend stack.
 
-- [Axios](./axios/axios.md)
-- [Bootstrap](./bootstrap/README.md)
-- [Crawlee](./crawlee/README.md) - TODO
-- [Electron](./electron/README.md)
+# Languages
 - [JavaScript](./javascript/README.md)
 - [NodeJS](./nodejs/README.md)
-- [Playwright](./playwright/README.md) - TODO
-- [Puppeteer](./puppeteer/README.md)
-- [React](./react/README.md)
-- [SPA](./spa/README.md): Single Page Web Applications
 - [TypeScript](./typescript/typescript.md)
-- [Vue](./vue/README.md) - TODO
-- [Vue 2](./vue2/README.md)
+
+# Tools
+- [tools.md](./tools.md)
+- [Axios](./axios/axios.md)
+- [Crawlee](./crawlee/README.md)
+- [Playwright](./playwright/README.md)
+- [Puppeteer](./puppeteer/README.md)
 - [WebAssembly](./webassembly/README.md)
 - [webpack](./webpack/README.md)
 
-## Tools
+# Frameworks
+- [Bootstrap](./bootstrap/README.md)
+- [Electron](./electron/README.md)
+- [React](./react/README.md)
+- [SPA](./spa/README.md): Single Page Web Applications
+- [Vue](./vue/README.md) - TODO
+- [Vue 2](./vue2/README.md)
