@@ -264,4 +264,5 @@ OpenGL: https://www.opengl.org/
 * [HTML encoding issues - "Â" character showing up instead of "&nbsp;"](https://stackoverflow.com/questions/1461907/html-encoding-issues-%C3%82-character-showing-up-instead-of-nbsp)
 	- for HTML4: `<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />`
 	- for HTML5: `<meta charset="utf-8">`
-
+* [Solved: “Cannot Use Import Statement Outside a Module” Error](https://kinsta.com/knowledgebase/cannot-use-import-statement-outside-module/)
+* [Access to script at ‘xx‘ from origin ‘null‘ has been blocked by CORS policy](https://blog.csdn.net/qq_41548644/article/details/118366360): VS Code extension 'Live Server'
