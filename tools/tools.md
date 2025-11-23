@@ -1,0 +1,89 @@
+# Tools
+# IDE
+## VS Code
+* [JavaScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript)
+* [`jsconfig.json`](https://code.visualstudio.com/docs/languages/jsconfig): `jsconfig.json` is `tsconfig.json` with `"allowJs"` attribute set to `true`.
+
+
+# Skaffold
+* [Vite](./Vite/Vite.md): Vite is a new breed of frontend build tooling that significantly improves the frontend development experience.
+* [Yeoman](https://yeoman.io/)
+	- [Getting Started With Yeoman](https://yeoman.io/learning/)
+	- [Node 14 with warning (node:31518) Warning: Accessing non-existent property 'column' of module exports inside circular dependency](https://github.com/nodejs/node/issues/32987)
+
+* [Create App: Frontend build config generator](https://createapp.dev/)
+	- webpack, Parcel, Snowpack
+	- Main library: No, React, Svelte, Vue
+	- UI library: Bootstrap, Tailwind CSS
+	- Test framework: Jest, Mocha, Chai, Jasmine, AVA, Cypress, TestCafe
+	- Transpiler: Babel, Typescript
+	- Styling: CSS, CSS Modules, PostCSS, Sass, Less, stylus
+	- Image: SVG, PNG
+	- Utilities: moment, lodash
+	- Linting: ESLint, Prettier
+	- Optimization: Code split vendors
+	- Webpack plugins: HTML webpack plugin, Webpack Bundle Analyzer, MiniCssExtractPlugin, CopyWebpackPlugin, CleanWebpackPlugin
+
+## See Also
+* [Learn setting up a simple Frontend environment for beginners](https://github.com/imalitavakoli/learn-frontend-env-setup): 2023-07, Github, Let's learn setting up a simple Frontend Developing environment for beginners!
+* [How to Build a reusable Javascript development environment](https://medium.com/the-andela-way/how-to-build-a-reusable-javascript-development-environment-f13146b77fdf): 2019-06
+* [Modern Javascript Development Environment](https://dev.to/tech_nikkhil/modern-javascript-development-environment-nik): 2021-06
+* [Setting Up Your Development Environment for React: A Comprehensive Guide](https://medium.com/@trilogicalshelp/setting-up-your-development-environment-for-react-a-comprehensive-guide-903293512fab): 2023-10
+
+
+# Environment
+* [Deno](./Deno/Deno.md): Deno is a JavaScript, TypeScript, and WebAssembly runtime with secure defaults and a great developer experience.
+* [jsdom](https://github.com/jsdom/jsdom): jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications.
+* [nvm](./nvm/nvm.md): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.
+
+# Package, Project
+* [Babel](./Babel/Babel.md): Babel is a JavaScript compiler.
+* [Browserify](https://browserify.org/): Browserify lets you `require('modules')` in the browser by bundling up all of your dependencies.
+* [npm](./npm/npm.md): JavaScript Package Manager, Registry & Website.
+* [nodemon](./nodemon/nodemon.md): nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+* [Parcel](./Parcel/Parcel.md): Parcel is a zero configuration build tool for the web.
+* [Prepack](https://prepack.io/): A JavaScript bundle optimizer. This repository was archived by the owner on Feb 12, 2022. It is now read-only.
+* [RequireJS](https://requirejs.org/): RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.
+* [SWC(Speedy Web Compiler)](./SWC/SWC.md): SWC (stands for Speedy Web Compiler) is a super-fast TypeScript / JavaScript compiler written in Rust. It's a library for Rust and JavaScript at the same time.
+* [webpack](./webpack/webpack.md): Webpack is a module bundler.
+* [yarn](https://yarnpkg.com/)
+
+# Documentation
+* [JSDoc](./JSDoc/JSDoc.md): An API documentation generator for JavaScript.
+* [tsoa](https://tsoa-community.github.io/docs/): OpenAPI-compliant Web APIs using TypeScript and Node
+
+# Linter, Formatter, Type Checker
+* [ESLint](./ESLint/ESLint.md): ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
+* JSLint
+* JSHint
+* [Prettier](./Prettier/Prettier.md)
+
+# Testing
+
+Unit Test:
+* [Chai](./Chai/Chai.md): Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+* [Jest](./Jest/Jest.md): Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+* [Mocha](./Mocha/Mocha.md): Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
+
+End-to-End Test:
+* [Cypress](./Cypress/Cypress.md): Cypress is a next generation front end testing tool built for the modern web.
+* [Playwright](./Playwright/Playwright.md): Playwright enables reliable end-to-end testing for modern web apps.
+* [Puppeteer](./Puppeteer/Puppeteer.md): Puppeteer is a JavaScript library which provides a high-level API to control Chrome or Firefox over the DevTools Protocol or WebDriver BiDi. Puppeteer runs in the headless (no visible UI) by default.
+
+## See Also
+* [What Is the Best Unit Testing Framework for JavaScript?](https://www.testim.io/blog/best-unit-testing-framework-for-javascript/)
+* [Testing Library](https://testing-library.com/): Simple and complete testing utilities that encourage good testing practices.
+
+# Logging
+* [log4js](https://github.com/log4js-node/log4js-node)
+* [Winston](https://github.com/winstonjs/winston)
+* [Pino](https://github.com/pinojs/pino)
+
+## See Also
+* [The 10 Best Node.js Logging Libraries](https://hackernoon.com/the-10-best-nodejs-logging-libraries)
+
+# Misc
+* [Axios](./Axios/Axios.md): Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase). On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.
+* [Lodash](./Lodash/Lodash.md): A modern JavaScript utility library delivering modularity, performance & extras.
+* [Sass](./Sass/Sass.md): Sass is a stylesheet language that’s compiled to CSS.
+* [UI5 Web Components](./UI5%20Web%20Components/UI5%20Web%20Components.md)

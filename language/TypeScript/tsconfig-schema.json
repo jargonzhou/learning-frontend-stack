@@ -1,0 +1,217 @@
+{
+  "files": [],
+  "extends": "",
+  // Specifies an array of filenames or patterns to include in the program. These filenames are resolved relative to the directory containing the `tsconfig.json` file.
+  // Default: `[]` if files is specified; `**/*` otherwise.
+  "include": [],
+  // Specifies an array of filenames or patterns that should be skipped when resolving `include`.
+  // Default: node_modules bower_components jspm_packages `outDir`
+  "exclude": [],
+  // Project references are a way to structure your TypeScript programs into smaller pieces. Using Project References can greatly improve build and editor interaction times, enforce logical separation between components, and organize your code in new and improved ways.
+  // Default: false
+  "references": [],
+  "compilerOptions": {
+    //
+    // Type Checking
+    //
+    "allowUnreachableCode": null,
+    "allowUnusedLabels": null,
+    "alwaysStrict": null,
+    "exactOptionalPropertyTypes": null,
+    "noFallthroughCasesInSwitch": null,
+    "noImplicitAny": null,
+    "noImplicitOverride": null,
+    "noImplicitReturns": null,
+    "noImplicitThis": null,
+    "noPropertyAccessFromIndexSignature": null,
+    "noUncheckedIndexedAccess": null,
+    "noUnusedLocals": null,
+    "noUnusedParameters": null,
+    "strict": null,
+    "strictBindCallApply": null,
+    "strictBuiltinIteratorReturn": null,
+    "strictFunctionTypes": null,
+    "strictNullChecks": null,
+    "strictPropertyInitialization": null,
+    "useUnknownInCatchVariables": null,
+    //
+    // Modules
+    //
+    "allowArbitraryExtensions": null,
+    "allowImportingTsExtensions": null,
+    "allowUmdGlobalAccess": null,
+    "baseUrl": null,
+    "customConditions": null,
+    // Sets the module system for the program.
+    // Default: CommonJS if target is ES5; ES6/ES2015 otherwise.
+    // Allowed: none commonjs amd umd system es6/es2015 es2020 es2022 esnext node16 node18 node20 nodenext preserves
+    "module": null,
+    // Specify the module resolution strateg
+    // Default: Node10 if module is CommonJS; Node16 if module is Node16, Node18, or Node20; NodeNext if module is NodeNext; Bundler if module is Preserve; Classic otherwise.
+    // Allowed: classic node10/node node16 nodenext bundler
+    "moduleResolution": null,
+    // Provides a way to override the default list of file name suffixes to search when resolving a module.
+    "moduleSuffixes": [],
+    "noResolve": null,
+    "noUncheckedSideEffectImports": null,
+    "paths": null,
+    "resolveJsonModule": null,
+    "resolvePackageJsonExports": null,
+    "resolvePackageJsonImports": null,
+    "rewriteRelativeImportExtensions": null,
+    // Default: The longest common path of all non-declaration input files. If `composite` is set, the default is instead the directory containing the `tsconfig.json` file.
+    "rootDir": null,
+    "rootDirs": null,
+    "typeRoots": null,
+    "types": null,
+    //
+    // Emit
+    //
+    // Generate `.d.ts` files for every TypeScript or JavaScript file inside your project. These `.d.ts` files are type definition files which describe the external API of your module. With `.d.ts` files, tools like TypeScript can provide intellisense and accurate types for un-typed code.
+    // Default: true if `composite`; false otherwise.
+    "declaration": false,
+    // Offers a way to configure the root directory for where declaration files are emitted.
+    "declarationDir": "",
+    // Generates a source map for `.d.ts` files which map back to the original `.ts` source file. This will allow editors such as VS Code to go to the original `.ts` file when using features like 'Go to Definition'.
+    "declarationMap": false,
+    "downlevelIteration": null,
+    "emitBOM": null,
+    "emitDeclarationOnly": null,
+    "importHelpers": null,
+    "inlineSourceMap": null,
+    "inlineSources": null,
+    "mapRoot": null,
+    "newLine": null,
+    "noEmit": null,
+    "noEmitHelpers": null,
+    "noEmitOnError": null,
+    "outDir": null,
+    "outFile": null,
+    "preserveConstEnums": null,
+    "removeComments": null,
+    "sourceMap": null,
+    "sourceRoot": null,
+    "stripInternal": null,
+    //
+    // JavaScript Support
+    //
+    "allowJs": null,
+    "checkJs": null,
+    "maxNodeModuleJsDepth": null,
+    //
+    // Editor Support
+    //
+    "disableSizeLimit": null,
+    "plugins": null,
+    //
+    // Interop Constraints
+    //
+    "allowSyntheticDefaultImports": null,
+    "erasableSyntaxOnly": null,
+    "esModuleInterop": null,
+    "forceConsistentCasingInFileNames": null,
+    "isolatedDeclarations": null,
+    "isolatedModules": null,
+    "preserveSymlinks": null,
+    "verbatimModuleSyntax": null,
+    //
+    // Backwards Compatibility
+    //
+    "charset": null,
+    "importsNotUsedAsValues": null,
+    "keyofStringsOnly": null,
+    "noImplicitUseStrict": null,
+    "noStrictGenericChecks": null,
+    "out": null,
+    "preserveValueImports": null,
+    "suppressExcessPropertyErrors": null,
+    "suppressImplicitAnyIndexErrors": null,
+    //
+    // Language and Environment
+    //
+    "emitDecoratorMetadata": null,
+    "experimentalDecorators": null,
+    // Controls how JSX constructs are emitted in JavaScript files. This only affects output of JS files that started in .tsx files.
+    // Allowed: preserve react react-native react-jsx react-jsxdev
+    "jsx": "preserve",
+    "jsxFactory": null,
+    "jsxFragmentFactory": null,
+    "jsxImportSource": null,
+    // TypeScript includes a default set of type definitions for built-in JS APIs (like Math), as well as type definitions for things found in browser environments (like document). TypeScript also includes APIs for newer JS features matching the target you specify; for example the definition for Map is available if target is ES6 or newer. In TypeScript 4.5, lib files can be overridden by npm modules.
+    // https://github.com/microsoft/TypeScript/tree/main/src/lib
+    "lib": null,
+    // TypeScript 4.5 introduced the possibility of substituting the default lib files with custom ones. All built-in library files would first try to be resolved from packages named `@typescript/lib-*`.
+    // ex: lock your dom libraries onto a specific version of the @types/web package
+    // {
+    //   "devDependencies": {
+    //     "@typescript/lib-dom": "npm:@types/web@0.0.199"
+    //   }
+    // }
+    "libReplacement": null,
+    // This setting controls how TypeScript determines whether a file is a script or a module.
+    // Default: "auto": Treat files with imports, exports, import.meta, jsx (with jsx: react-jsx), or esm format (with module: node16+) as modules.
+    // Allowed: legacy auto force
+    "moduleDetection": "auto",
+    "noLib": null,
+    "reactNamespace": null,
+    // The target setting changes which JS features are downleveled and which are left intact.
+    // Default: es2023 if module is node20; esnext if module is nodenext; ES5 otherwise.
+    // Allowed: es3 es5 es6/es2015 es2016 es2017 es2018 es2019 es2020 es2021 es2022 es2023 es2024 esnext
+    "target": "es5",
+    "useDefineForClassFields": null,
+    //
+    // Compiler Diagnostics
+    //
+    "diagnostics": null,
+    "explainFiles": null,
+    "extendedDiagnostics": null,
+    "generateCpuProfile": null,
+    "generateTrace": null,
+    "listEmittedFiles": null,
+    "listFiles": null,
+    "noCheck": null,
+    "traceResolution": null,
+    //
+    // Projects
+    // 
+    // The composite option enforces certain constraints which make it possible for build tools (including TypeScript itself, under --build mode) to quickly determine if a project has been built yet.
+    "composite": false,
+    "disableReferencedProjectLoad": null,
+    "disableSolutionSearching": null,
+    "disableSourceOfProjectReferenceRedirect": null,
+    "incremental": null,
+    "tsBuildInfoFile": null,
+    //
+    // Output Formatting
+    //
+    "noErrorTruncation": null,
+    "preserveWatchOutput": null,
+    "pretty": null,
+    //
+    // Completeness
+    //
+    "skipDefaultLibCheck": null,
+    "skipLibCheck": null,
+    //
+    // Command Line
+    //
+    //
+    // Watch Options
+    //
+    "assumeChangesOnlyAffectDirectDependencies": null
+  },
+  "watchOptions": {
+    "watchFile": null,
+    "watchDirectory": null,
+    "fallbackPolling": null,
+    "synchronousWatchDirectory": null,
+    "excludeDirectories": null,
+    "excludeFiles": null,
+  },
+  "typeAcquisition": {
+    "enable": null,
+    "include": null,
+    "exclude": null,
+    "disableFilenameBasedTypeAcquisition": null
+  }
+}

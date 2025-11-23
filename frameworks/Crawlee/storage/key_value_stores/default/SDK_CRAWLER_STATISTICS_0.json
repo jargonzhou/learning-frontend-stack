@@ -1,0 +1,50 @@
+{
+  "requestsFinished": 0,
+  "requestsFailed": 1,
+  "requestsRetries": 1,
+  "requestsFailedPerMinute": 1,
+  "requestsFinishedPerMinute": 0,
+  "requestMinDurationMillis": null,
+  "requestMaxDurationMillis": 0,
+  "requestTotalFailedDurationMillis": 2311,
+  "requestTotalFinishedDurationMillis": 0,
+  "crawlerStartedAt": "2025-07-20T02:16:50.346Z",
+  "crawlerFinishedAt": "2025-07-20T02:17:21.286Z",
+  "statsPersistedAt": "2025-07-20T02:17:21.286Z",
+  "crawlerRuntimeMillis": 31014,
+  "crawlerLastStartTimestamp": 1752977810272,
+  "requestRetryHistogram": [
+    null,
+    null,
+    null,
+    1
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 2311,
+  "requestAvgFinishedDurationMillis": null,
+  "requestTotalDurationMillis": 2311,
+  "requestsTotal": 1,
+  "requestsWithStatusCode": {},
+  "errors": {
+    "D:\\workspace\\github\\learning-frontend-stack\\crawlee\\node_modules\\@crawlee\\src\\internals\\utils\\playwright-utils.ts:241:17": {
+      "missing error code": {
+        "Error": {
+          "page.goto: net::ERR_ABORTED; maybe frame was detached?": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "D:\\workspace\\github\\learning-frontend-stack\\crawlee\\node_modules\\@crawlee\\src\\internals\\utils\\playwright-utils.ts:241:17": {
+      "missing error code": {
+        "Error": {
+          "page.goto: Target page, context or browser has been closed": {
+            "count": 3
+          }
+        }
+      }
+    }
+  }
+}

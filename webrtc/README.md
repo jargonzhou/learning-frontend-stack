@@ -1,3 +1,0 @@
-# WebRTC
-- https://webrtc.org/
-
