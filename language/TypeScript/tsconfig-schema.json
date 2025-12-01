@@ -1,5 +1,10 @@
 {
+  // Specifies an allowlist of files to include in the program. An error occurs if any of the files can’t be found.
+  // Default: false
   "files": [],
+  // The value of extends is a string which contains a path to another configuration file to inherit from. The path may use Node.js style resolution.
+  // The configuration from the base file are loaded first, then overridden by those in the inheriting config file. All relative paths found in the configuration file will be resolved relative to the configuration file they originated in.
+  // Default: false
   "extends": "",
   // Specifies an array of filenames or patterns to include in the program. These filenames are resolved relative to the directory containing the `tsconfig.json` file.
   // Default: `[]` if files is specified; `**/*` otherwise.
@@ -8,6 +13,7 @@
   // Default: node_modules bower_components jspm_packages `outDir`
   "exclude": [],
   // Project references are a way to structure your TypeScript programs into smaller pieces. Using Project References can greatly improve build and editor interaction times, enforce logical separation between components, and organize your code in new and improved ways.
+  // https://www.typescriptlang.org/docs/handbook/project-references.html
   // Default: false
   "references": [],
   "compilerOptions": {
@@ -16,10 +22,12 @@
     //
     "allowUnreachableCode": null,
     "allowUnusedLabels": null,
+    // Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file.
+    // Default: true if `strict`; false otherwise.
     "alwaysStrict": null,
     "exactOptionalPropertyTypes": null,
     "noFallthroughCasesInSwitch": null,
-    "noImplicitAny": null,
+    "noImplicitAny": null, // strict mode
     "noImplicitOverride": null,
     "noImplicitReturns": null,
     "noImplicitThis": null,
@@ -27,13 +35,16 @@
     "noUncheckedIndexedAccess": null,
     "noUnusedLocals": null,
     "noUnusedParameters": null,
+    // The `strict` flag enables a wide range of type checking behavior that results in stronger guarantees of program correctness. Turning this on is equivalent to enabling all of the 'strict mode family' options, which are outlined below. You can then turn off individual strict mode family checks as needed.
     "strict": null,
-    "strictBindCallApply": null,
+    "strictBindCallApply": null, // strict mode
     "strictBuiltinIteratorReturn": null,
-    "strictFunctionTypes": null,
-    "strictNullChecks": null,
-    "strictPropertyInitialization": null,
-    "useUnknownInCatchVariables": null,
+    "strictFunctionTypes": null, // strict mode
+    // When `strictNullChecks` is `false`, `null` and `undefined` are effectively ignored by the language. This can lead to unexpected errors at runtime. When `strictNullChecks` is `true`, `null` and `undefined` have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected.
+    // Default: true if `strict`; false otherwise.
+    "strictNullChecks": null, // strict mode
+    "strictPropertyInitialization": null, // strict mode
+    "useUnknownInCatchVariables": null, // strict mode
     //
     // Modules
     //
@@ -42,12 +53,19 @@
     "allowUmdGlobalAccess": null,
     "baseUrl": null,
     "customConditions": null,
-    // Sets the module system for the program.
-    // Default: CommonJS if target is ES5; ES6/ES2015 otherwise.
+    // Sets the module system for the program./目标使用的模块系统
+    // Default:
+    //  CommonJS if `target` is ES5;
+    //  ES6/ES2015 otherwise.
     // Allowed: none commonjs amd umd system es6/es2015 es2020 es2022 esnext node16 node18 node20 nodenext preserves
     "module": null,
-    // Specify the module resolution strateg
-    // Default: Node10 if module is CommonJS; Node16 if module is Node16, Node18, or Node20; NodeNext if module is NodeNext; Bundler if module is Preserve; Classic otherwise.
+    // Specify the module resolution strategy/模块解析策略
+    // Default:
+    //  Node10 if module is CommonJS;
+    //  Node16 if module is Node16, Node18, or Node20;
+    //  NodeNext if module is NodeNext;
+    //  Bundler if module is Preserve;
+    //  Classic otherwise.
     // Allowed: classic node10/node node16 nodenext bundler
     "moduleResolution": null,
     // Provides a way to override the default list of file name suffixes to search when resolving a module.
@@ -55,14 +73,19 @@
     "noResolve": null,
     "noUncheckedSideEffectImports": null,
     "paths": null,
+    // Allows importing modules with a `.json` extension, which is a common practice in node projects. This includes generating a type for the `import` based on the static JSON shape.
     "resolveJsonModule": null,
     "resolvePackageJsonExports": null,
     "resolvePackageJsonImports": null,
     "rewriteRelativeImportExtensions": null,
     // Default: The longest common path of all non-declaration input files. If `composite` is set, the default is instead the directory containing the `tsconfig.json` file.
     "rootDir": null,
+    // Using `rootDirs`, you can inform the compiler that there are many “virtual” directories acting as a single root. This allows the compiler to resolve relative module imports within these “virtual” directories, as if they were merged in to one directory.
     "rootDirs": null,
+    // By default all visible ”@types” packages are included in your compilation. Packages in `node_modules/@types` of any enclosing folder are considered visible. 
+    // If `typeRoots` is specified, only packages under `typeRoots` will be included.
     "typeRoots": null,
+    // If `types` is specified, only packages listed will be included in the global scope. 
     "types": null,
     //
     // Emit
@@ -72,31 +95,36 @@
     "declaration": false,
     // Offers a way to configure the root directory for where declaration files are emitted.
     "declarationDir": "",
-    // Generates a source map for `.d.ts` files which map back to the original `.ts` source file. This will allow editors such as VS Code to go to the original `.ts` file when using features like 'Go to Definition'.
+    // Generates a source map(`.d.ts.map`) for `.d.ts` files which map back to the original `.ts` source file. This will allow editors such as VS Code to go to the original `.ts` file when using features like 'Go to Definition'.
     "declarationMap": false,
     "downlevelIteration": null,
     "emitBOM": null,
-    "emitDeclarationOnly": null,
+    // Only emit `.d.ts` files; do not emit `.js` files.
+    "emitDeclarationOnly": false,
     "importHelpers": null,
     "inlineSourceMap": null,
     "inlineSources": null,
     "mapRoot": null,
     "newLine": null,
-    "noEmit": null,
+    // Do not emit compiler output files like JavaScript source code, source-maps or declarations.
+    "noEmit": false,
     "noEmitHelpers": null,
     "noEmitOnError": null,
     "outDir": null,
     "outFile": null,
     "preserveConstEnums": null,
     "removeComments": null,
-    "sourceMap": null,
+    // Enables the generation of sourcemap files. These files allow debuggers and other tools to display the original TypeScript source code when actually working with the emitted JavaScript files. Source map files are emitted as `.js.map` (or `.jsx.map`) files next to the corresponding .js output file.
+    "sourceMap": false,
     "sourceRoot": null,
     "stripInternal": null,
     //
     // JavaScript Support
     //
-    "allowJs": null,
-    "checkJs": null,
+    // Allow JavaScript files to be imported inside your project, instead of just `.ts` and `.tsx` files.
+    "allowJs": false,
+    // Works in tandem with `allowJs`. When `checkJs` is enabled then errors are reported in JavaScript files. This is the equivalent of including `// @ts-check` at the top of all JavaScript files which are included in your project.
+    "checkJs": false,
     "maxNodeModuleJsDepth": null,
     //
     // Editor Support
@@ -108,6 +136,7 @@
     //
     "allowSyntheticDefaultImports": null,
     "erasableSyntaxOnly": null,
+    // By default (with `esModuleInterop` false or not set) TypeScript treats CommonJS/AMD/UMD modules similar to ES6 modules.
     "esModuleInterop": null,
     "forceConsistentCasingInFileNames": null,
     "isolatedDeclarations": null,
@@ -130,7 +159,8 @@
     // Language and Environment
     //
     "emitDecoratorMetadata": null,
-    "experimentalDecorators": null,
+    // Enables experimental support for decorators, which is a version of decorators that predates the TC39 standardization process.
+    "experimentalDecorators": false,
     // Controls how JSX constructs are emitted in JavaScript files. This only affects output of JS files that started in .tsx files.
     // Allowed: preserve react react-native react-jsx react-jsxdev
     "jsx": "preserve",
@@ -190,8 +220,10 @@
     //
     // Completeness
     //
+    // Use `skipLibCheck` instead. Skip type checking of default library declaration files.
     "skipDefaultLibCheck": null,
-    "skipLibCheck": null,
+    // Skip type checking of declaration files.
+    "skipLibCheck": false,
     //
     // Command Line
     //

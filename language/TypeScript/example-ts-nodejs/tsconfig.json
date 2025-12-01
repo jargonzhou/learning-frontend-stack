@@ -5,12 +5,24 @@
         "module": "nodenext",
         "moduleResolution": "node16",
         "esModuleInterop": true,
+        // "isolatedModules": true,
         "target": "esnext",
         "allowJs": true,
-        "sourceMap": true,
+        "sourceMap": true, // .js.map
+        "declaration": true, // .d.ts
+        "declarationMap": true, // .d.ts.map 
         "outDir": "dist",
-        "lib": ["ESNext", "DOM"]
+        "lib": [
+            "ESNext",
+            "DOM", // browser
+            "WebWorker", // Web Worker
+        ],
+        "experimentalDecorators": true, // decorators
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules"]
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
 }

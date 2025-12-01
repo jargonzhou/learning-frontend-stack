@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Student = void 0;
+exports.greeter = greeter;
 class Student {
     firstName;
     middleInitial;
@@ -12,6 +14,7 @@ class Student {
         this.fullName = firstName + ' ' + middleInitial + ' ' + lastName;
     }
 }
+exports.Student = Student;
 function greeter(person) {
     return 'Hello, ' + person.firstName + ' ' + person.lastName;
 }

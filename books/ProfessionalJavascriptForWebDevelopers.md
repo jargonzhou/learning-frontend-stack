@@ -1,10 +1,8 @@
 # Professional Javascript® for Web Developers
 
-# Basics
+# 1 What Is JavaScript?
+# 2 JavaScript in HTML
 
-<!--
-JavaScript in HTML
--->
 
 ES6关键字:
 
@@ -107,7 +105,12 @@ await
 
 函数: `function`
 
-变量, 作用域和内存
+
+
+
+
+# 3 Language Basics
+# 4 Variables, Scope, and Memory/变量, 作用域和内存
 - 原始值, 引用值
   - 原始值: 最简单的数据, 按值访问变量
   - 引用值: 由多个值构成的对象, 按引用访问变量
@@ -123,7 +126,8 @@ await
   - `const`常量声明
 - 垃圾回收
 
-基本引用类型
+
+# 5 Basic Reference Types/基本引用类型
 - 对象定义: 描述了自己的对象应有的属性和方法. 跟类不是一个概念.
 - 函数也是一种引用类型.
 - `Date`
@@ -136,6 +140,9 @@ await
     - 属性: `undefined`, `NaN`, `Infinity`, `Object`, `Array`, `Function`, ..., `Symbol`, `Error`, ...
     - `window`对象: 浏览器 
   - `Math`: 保存数学公式, 信息和计算
+
+
+# 6 Advanced Reference Types
 
 集合引用类型
 - `Object`
@@ -154,7 +161,7 @@ await
 - `WeakSet`: 值不属于正式的引用, 不会阻止垃圾回收.
 - 迭代器(`for-of`), 扩展操作符(`...`)
 
-# Iterators, Generators
+# 7 Iterators and Generators
 
 任何实现`Iterable`接口的数据结构都可以被实现`Iterator`接口的结构消费.
 - `Iterable`: 可迭代对象
@@ -171,7 +178,8 @@ await
 - `return()`: 强制生成器进入关闭状态
 - `throw()`: 在暂停的时候将一个提供的错误注入到生成器对象中. 如果生成器函数中未处理错误生成器就会关闭.
 
-# Objected-Oriented Programming
+# 8 Objects, Classes, and Object-Oriented Programming
+
 
 对象
 - 创建对象, 对象字面量
@@ -362,7 +370,11 @@ ECMAScript函数没有签名, 自然也没有重载: 后定义的覆盖先定义
 异步函数: `async`, `await` ES8
 - 始终返回期约对象
 
-# BOM(Browser Object Model)
+# 9 Proxies and Reflect
+# 10 Functions
+# 11 Promises and Async/Await
+# 12 The Browser Object Model
+
 
 <!--
 window
@@ -408,16 +420,8 @@ BOM提供了与网页无关的浏览器功能对象.
 ## See Also
 * [webhint browser extension](https://webhint.io/docs/user-guide/extensions/extension-browser/): perform runtime analysis of cross-browser compatibility and other checks
 
-# Client Detection
 
-<!--
-capability
-user-agent
-software
-hardware
--->
-
-# DOM(Document Object Model)
+# 13 The Document Object Model
 
 <!--
 Node
@@ -457,7 +461,8 @@ DOM level 2 and 3:
 			- [What is Vanilla JavaScript?](https://www.geeksforgeeks.org/what-is-vanilla-javascript/): VanillaJS refers to the pure version of JavaScript which does not use any external tool like JavaScript libraries or Frameworks.
 
 
-# Events
+# 14 DOM Extensions
+# 15 Events
 
 <!--
 event flow
@@ -470,9 +475,8 @@ device events
 simulating events
 -->
 
-# Animation and Graphics with Canvas
-
-# Forms
+# 16 Animation and Graphics with Canvas
+# 17 Scripting Forms
 
 <!--
 form
@@ -482,7 +486,7 @@ form serialization
 rich text editing
 -->
 
-# JavaScript API
+# 18 JavaScript APIs
 
 <!--
 atomics, SharedArrayBuffer
@@ -499,7 +503,9 @@ web components
 web cryptograph API
 -->
 
-# Error Handling and Debugging
+
+
+# 19 Error Handling and Debugging
 
 <!--
 browser error reporting
@@ -507,9 +513,8 @@ error handling
 debugging techniques
 -->
 
-# XML, JSON
-
-# Network Requests, Remote Resources
+# 20 JSON
+# 21 Network Requests and Remote Resources
 
 <!--
 XMLHttpRequest
@@ -521,7 +526,8 @@ Web Sockets
 Security
 -->
 
-# Client-Side Storage
+
+# 22 Client-Side Storage
 
 <!--
 Cookie
@@ -529,20 +535,20 @@ Web Storage
 IndexedDB
 -->
 
-# Modules
+# 23 Modules
 
-- IIFE(Immediately Invoked Function Expression)
-- CommonJS: Node.js
+- **IIFE(Immediately Invoked Function Expression)**
+- **CommonJS**: Node.js
 ```javascript
 require(...)
 exports // object
 ```
-- AMD(Asynchronous Module Definition)
+- **AMD(Asynchronous Module Definition)**
 ```javascript
 define(...)
 ```
-- UMD(Univarsql Module Definition): use IIFE to combine CommonJS and AMD.
-- ES6 module
+- **UMD(Univarsql Module Definition)**: use IIFE to combine CommonJS and AMD.
+- **ES6 module**
 ```html
 <script type="module"></script>
 <script type="module" src="xxx.js"></script>
@@ -571,7 +577,8 @@ Module Resolution
 * [What is the difference between .js and .mjs files](https://stackoverflow.com/questions/57492546/what-is-the-difference-between-js-and-mjs-files): Node.js will treat `.cjs` files as CommonJS modules and `.mjs` files as ECMAScript modules.
 
 
-# Workers
+
+# 24 Workers
 
 <!--
 Dedicated Workers
@@ -579,7 +586,10 @@ Shread Workers
 Service Workers
 -->
 
-# JavaScript库和框架
+# 25 Best Practices
+# A ES.Next
+# B Strict Mode
+# C JavaScript Libraries and Frameworks
 
 框架
 - React, Flux
@@ -605,7 +615,7 @@ Service Workers
 - moo.fx
 - Lightbox
 
-# JavaScript工具
+# D JavaScript Tools
 
 包管理
 - npm

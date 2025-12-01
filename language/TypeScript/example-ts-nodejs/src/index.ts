@@ -21,3 +21,6 @@ function greeter(person: Person) {
 const user = new Student('Jane', 'M.', 'User')
 console.log(greeter(user))
 console.log('Hello, TypeScript!')
+
+// exports
+export { Student, Person, greeter }

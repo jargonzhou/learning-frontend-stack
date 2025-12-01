@@ -4,7 +4,6 @@
 * [JavaScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript)
 * [`jsconfig.json`](https://code.visualstudio.com/docs/languages/jsconfig): `jsconfig.json` is `tsconfig.json` with `"allowJs"` attribute set to `true`.
 
-
 # Skaffold
 * [Vite](./Vite/Vite.md): Vite is a new breed of frontend build tooling that significantly improves the frontend development experience.
 * [Yeoman](https://yeoman.io/)
@@ -30,10 +29,9 @@
 * [Modern Javascript Development Environment](https://dev.to/tech_nikkhil/modern-javascript-development-environment-nik): 2021-06
 * [Setting Up Your Development Environment for React: A Comprehensive Guide](https://medium.com/@trilogicalshelp/setting-up-your-development-environment-for-react-a-comprehensive-guide-903293512fab): 2023-10
 
-
 # Environment
 * [Deno](./Deno/Deno.md): Deno is a JavaScript, TypeScript, and WebAssembly runtime with secure defaults and a great developer experience.
-* [jsdom](https://github.com/jsdom/jsdom): jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications.
+* [jsdom](https://github.com/jsdom/jsdom): jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, **for use with Node.js**. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications.
 * [nvm](./nvm/nvm.md): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.
 
 # Package, Project
@@ -50,6 +48,7 @@
 
 # Documentation
 * [JSDoc](./JSDoc/JSDoc.md): An API documentation generator for JavaScript.
+* [TSDoc](./TSDoc/TSDoc.md): TSDoc is a proposal to standardize the doc comments used in TypeScript code.
 * [tsoa](https://tsoa-community.github.io/docs/): OpenAPI-compliant Web APIs using TypeScript and Node
 
 # Linter, Formatter, Type Checker
@@ -57,13 +56,19 @@
 * JSLint
 * JSHint
 * [Prettier](./Prettier/Prettier.md)
+* [TSLint](https://github.com/palantir/tslint): TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors. It is widely supported across modern editors & build systems and can be customized with your own lint rules, configurations, and formatters. - [Roadmap: TSLint -> ESLint #4534](https://github.com/palantir/tslint/issues/4534)
 
 # Testing
 
 Unit Test:
 * [Chai](./Chai/Chai.md): Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+* [Jasmine](https://Jasmine.github.io): Jasmine is a framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It runs in browsers and in Node.js. And it has a clean, obvious syntax so that you can easily write tests.
 * [Jest](./Jest/Jest.md): Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * [Mocha](./Mocha/Mocha.md): Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
+* [Tape](https://github.com/substack/tape): TAP-producing test harness for node and browsers.
+  * [Test Anything Protocol](https://testanything.org/): TAP, the Test Anything Protocol, is a simple text-based interface between testing modules in a test harness. It decouples the reporting of errors from the presentation of the reports.
+* [Testcontainers for Node.js](https://node.testcontainers.org/): Testcontainers is a library that supports tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
+* [Vitest](./Vite/Vitest/Vitest.md): Next generation testing framework powered by [Vite](./Vite/Vite.md).
 
 End-to-End Test:
 * [Cypress](./Cypress/Cypress.md): Cypress is a next generation front end testing tool built for the modern web.
@@ -81,6 +86,10 @@ End-to-End Test:
 
 ## See Also
 * [The 10 Best Node.js Logging Libraries](https://hackernoon.com/the-10-best-nodejs-logging-libraries)
+
+# Data Engineering
+* [redis/node-redis](https://github.com/redis/node-redis): Redis Node.js client.
+* [TypeORM](./TypeORM/TypeORM.md): ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.
 
 # Misc
 * [Axios](./Axios/Axios.md): Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase). On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.

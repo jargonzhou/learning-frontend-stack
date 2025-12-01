@@ -8,6 +8,9 @@
 * [JavaScript Versions - W3Schools](https://www.w3schools.com/js/js_versions.asp): ECMAScript is the official name of the JavaScript standard.
 * [ECMAScript 2015 Language Specification – ECMA-262 6th Edition](https://262.ecma-international.org/6.0/): ES6, ES2015
 
+# Extensions
+* [RxJS](./RxJS/RxJS.md): Reactive Extensions For JavaScript.
+
 # See Also
 * [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript): A collection of awesome browser-side JavaScript libraries, resources and shiny things.
 * [The Modern JavaScript Tutorial](https://javascript.info/)

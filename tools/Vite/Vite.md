@@ -54,7 +54,7 @@ bun create vite my-vue-app --template vue
 ```
 
 # Features
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+* https://vite.dev/guide/features
 
 ## Hot Module Replacement (HMR)
 

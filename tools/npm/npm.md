@@ -16,12 +16,20 @@
 # `package.json`
 * https://docs.npmjs.com/cli/v11/configuring-npm/package-json
 
+
 # CLI
-* [npx](https://docs.npmjs.com/cli/v10/commands/npx): Run a command from a local or remote npm package
 
 ```shell
 # init project
 npm init
+```
+
+* [npx](https://docs.npmjs.com/cli/v10/commands/npx): Run a command from a local or remote npm package
+```shell
+$ npx tsc --version
+Version 5.8.3
+$ npm exec -- tsc --version
+Version 5.8.3
 ```
 
 # Tools
@@ -32,17 +40,17 @@ npm init
 
 # FAQ
 * [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
-
 * [Npm ERR! Invalid version on npm install](https://stackoverflow.com/questions/71383116/npm-err-invalid-version-on-npm-install)
 ```shell
 rm -rf npm_modules
 rm -rf package.json.lock
 npm cache clean --force
 ```
-
 * [cnpm](https://npmmirror.com/): npmmirror 镜像站.
 ```shell
 npm install cnpm -g --registry=https://registry.npmmirror.com
 
 cnpm install
 ```
+* [How to set environment variables from within package.json? - StackOverflow](https://stackoverflow.com/questions/25112510/how-to-set-environment-variables-from-within-package-json)
+  * [cross-env](https://www.npmjs.com/package/cross-env)
