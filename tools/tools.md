@@ -4,6 +4,13 @@
 * [JavaScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript)
 * [`jsconfig.json`](https://code.visualstudio.com/docs/languages/jsconfig): `jsconfig.json` is `tsconfig.json` with `"allowJs"` attribute set to `true`.
 
+# Developer Tools
+
+* [Firefox Developer Tools](https://firefox-source-docs.mozilla.org/devtools-user/index.html): Documentation for the set of web-developer tools built into Firefox.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/): Documentation for the set of web-developer tools built into Chrome.
+* [Safari Web Inspector](https://webkit.org/web-inspector/): Documentation for the set of web-developer tools built into Safari.
+* [Edge DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools/landing/): Documentation for the set of web-developer tools built into Edge.
+
 # Skaffold
 * [Vite](./Vite/Vite.md): Vite is a new breed of frontend build tooling that significantly improves the frontend development experience.
 * [Yeoman](https://yeoman.io/)
@@ -37,6 +44,7 @@
 # Package, Project
 * [Babel](./Babel/Babel.md): Babel is a JavaScript compiler.
 * [Browserify](https://browserify.org/): Browserify lets you `require('modules')` in the browser by bundling up all of your dependencies.
+* [Google Closure Compiler](https://github.com/google/closure-compiler): The Closure Compiler is a tool for making JavaScript download and run faster. It is a true compiler for JavaScript. Instead of compiling from a source language to machine code, it compiles from JavaScript to better JavaScript. It parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls.
 * [npm](./npm/npm.md): JavaScript Package Manager, Registry & Website.
 * [nodemon](./nodemon/nodemon.md): nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 * [Parcel](./Parcel/Parcel.md): Parcel is a zero configuration build tool for the web.
@@ -62,7 +70,7 @@
 
 Unit Test:
 * [Chai](./Chai/Chai.md): Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
-* [Jasmine](https://Jasmine.github.io): Jasmine is a framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It runs in browsers and in Node.js. And it has a clean, obvious syntax so that you can easily write tests.
+* [Jasmine](https://Jasmine.github.io): Jasmine is a framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It runs in browsers and in Node.js. And it has a clean, obvious syntax so that you can easily write tests. - [JavaScript Testing with Jasmine](https://www.oreilly.com/library/view/javascript-testing-with/9781449356729/) O'Reilly: 2013.
 * [Jest](./Jest/Jest.md): Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * [Mocha](./Mocha/Mocha.md): Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
 * [Tape](https://github.com/substack/tape): TAP-producing test harness for node and browsers.
@@ -93,6 +101,8 @@ End-to-End Test:
 
 # Misc
 * [Axios](./Axios/Axios.md): Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase). On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.
+* [classnames](https://github.com/JedWatson/classnames): A simple javascript utility for conditionally joining classNames together.
+* [cssnano](https://github.com/cssnano/cssnano): cssnano is a modern, modular compression tool written on top of the PostCSS ecosystem, which allows us to use a lot of powerful features in order to compact CSS appropriately.
 * [Lodash](./Lodash/Lodash.md): A modern JavaScript utility library delivering modularity, performance & extras.
 * [Sass](./Sass/Sass.md): Sass is a stylesheet language that’s compiled to CSS.
 * [UI5 Web Components](./UI5%20Web%20Components/UI5%20Web%20Components.md)

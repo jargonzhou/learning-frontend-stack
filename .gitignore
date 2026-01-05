@@ -1,6 +1,12 @@
+################################################################################
+# Langauges
+################################################################################
+
+################################################################################
+# Tools
+################################################################################
 # crawlee
 crawlee/storage
-
 
 # nodejs
 node_modules/
@@ -8,7 +14,15 @@ node_modules/
 # spa
 spa/spa-server/ops/mongo-data
 
-# webassembly
+
+# todo
+todo.txt
+done.txt
+
+# Vite
+__snapshots__
+
+# Webassembly
 webassembly/emscripten/emsdk-3.1.56.zip
 webassembly/emscripten/emsdk-3.1.56
 webassembly/emscripten/tutorial/*.html
@@ -18,6 +32,6 @@ webassembly/pyodide-0.25.0.tar.bz2
 webassembly/pyodide
 !webassembly/pyodide/test.html
 
-# todo
-todo.txt
-done.txt
+################################################################################
+# Frameworks
+################################################################################

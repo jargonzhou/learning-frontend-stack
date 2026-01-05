@@ -157,8 +157,8 @@ category
 * https://eslint.org/docs/latest/integrate/nodejs-api
 
 # See Also
-* [typescript-eslint](https://typescript-eslint.io/): Powerful static analysis for JavaScript and TypeScript.
-  * https://github.com/typescript-eslint/typescript-eslint
+* [awesome-eslint](https://github.com/dustinspecker/awesome-eslint): A list of awesome ESLint plugins, configs, etc.
+* [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint): Powerful static analysis for JavaScript and TypeScript.
 ```shell
 npm install --save-dev eslint @eslint/js typescript typescript-eslint
 touch eslint.config.mjs

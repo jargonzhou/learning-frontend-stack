@@ -1,4 +1,5 @@
 # npm
+* https://docs.npmjs.com/
 * https://github.com/npm
 
 > JavaScript Package Manager, Registry & Website
@@ -13,24 +14,127 @@
 >
 > - npm is **the command line client** that allows developers to install and publish those packages.
 
-# `package.json`
-* https://docs.npmjs.com/cli/v11/configuring-npm/package-json
-
 
 # CLI
 
-```shell
-# init project
-npm init
-```
+## CLI Commands
+* https://docs.npmjs.com/cli/v11/commands/npm
 
-* [npx](https://docs.npmjs.com/cli/v10/commands/npx): Run a command from a local or remote npm package
+| Command             | Description                                      |
+| :------------------ | :----------------------------------------------- |
+| npm                 |                                                  |
+| npm access          |                                                  |
+| npm adduser         |                                                  |
+| npm audit           |                                                  |
+| npm bugs            |                                                  |
+| npm cache           |                                                  |
+| npm ci              |                                                  |
+| npm completion      |                                                  |
+| npm config          |                                                  |
+| npm dedupe          |                                                  |
+| npm deprecate       |                                                  |
+| npm diff            |                                                  |
+| npm dist-tag        |                                                  |
+| npm docs            |                                                  |
+| npm doctor          |                                                  |
+| npm edit            |                                                  |
+| npm exec            |                                                  |
+| npm explain         |                                                  |
+| npm explore         |                                                  |
+| npm find-dupes      |                                                  |
+| npm fund            |                                                  |
+| npm help            |                                                  |
+| npm help-search     |                                                  |
+| npm init            | init project                                     |
+| npm install         |                                                  |
+| npm install-ci-test |                                                  |
+| npm install-test    |                                                  |
+| npm link            |                                                  |
+| npm login           |                                                  |
+| npm logout          |                                                  |
+| npm ls              |                                                  |
+| npm org             |                                                  |
+| npm outdated        |                                                  |
+| npm owner           |                                                  |
+| npm pack            |                                                  |
+| npm ping            |                                                  |
+| npm pkg             |                                                  |
+| npm prefix          |                                                  |
+| npm profile         |                                                  |
+| npm prune           |                                                  |
+| npm publish         |                                                  |
+| npm query           |                                                  |
+| npm rebuild         |                                                  |
+| npm repo            |                                                  |
+| npm restart         |                                                  |
+| npm root            |                                                  |
+| npm run             |                                                  |
+| npm sbom            |                                                  |
+| npm search          |                                                  |
+| npm shrinkwrap      |                                                  |
+| npm star            |                                                  |
+| npm stars           |                                                  |
+| npm start           |                                                  |
+| npm stop            |                                                  |
+| npm team            |                                                  |
+| npm test            |                                                  |
+| npm token           |                                                  |
+| npm undeprecate     |                                                  |
+| npm uninstall       |                                                  |
+| npm unpublish       |                                                  |
+| npm unstar          |                                                  |
+| npm update          |                                                  |
+| npm version         |                                                  |
+| npm view            |                                                  |
+| npm whoami          |                                                  |
+| npx                 | Run a command from a local or remote npm package |
+
+* npx
 ```shell
 $ npx tsc --version
 Version 5.8.3
 $ npm exec -- tsc --version
 Version 5.8.3
 ```
+
+## Configuring npm
+* https://docs.npmjs.com/cli/v11/configuring-npm/install
+
+### `.npmrc`
+
+topics
+- Install
+- Folders
+- `.npmrc`
+- `npm-shrinkwrap.json`
+- `package.json`
+- `package-lock.json`
+
+
+```shell
+# change npm-cache directory
+# $ npm config ls -l
+cache = "D:\\software\\npm-cache"
+```
+
+### `package.json`
+* https://docs.npmjs.com/cli/v11/configuring-npm/package-json
+
+## Using npm
+* https://docs.npmjs.com/cli/v11/using-npm/registry
+
+topics
+- Registry
+- Package spec
+- Config
+- Logging
+- Scope
+- Scripts
+- Workspaces
+- Organizations
+- Dependency Selectors
+- Developers
+- Removal
 
 # Tools
 * [node-framework-stars](https://github.com/vanodevium/node-framework-stars): A list of popular GitHub projects related to Node.js web frameworks (ranked by stars)

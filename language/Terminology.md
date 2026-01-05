@@ -1,5 +1,9 @@
 # Terminology
 
+# Code-splitting/代码拆分
+
+Code-splitting is the process of breaking your app into smaller bundles that can be loaded on demand. 
+
 # Control flow based type analysis/基于控制流的类型分析
 
 See Also: 
@@ -8,7 +12,29 @@ See Also:
 * [TypeScript Type Guards - S3Schlools](https://www.w3schools.com/typescript/typescript_type_guards.php)
 * [TypeScript Control Flow Analysis - GeeksforGeeks](https://www.geeksforgeeks.org/typescript/typescript-control-flow-analysis/)
 
+# CSR(Client-Side Rendering)/客户端渲染
+* https://developer.mozilla.org/en-US/docs/Glossary/CSR
+
+# CSS preprocessor/CSS预处理器
+* [CSS preprocessor](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor)
+
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax.
+
+There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as **mixin**, **nesting selector**, **inheritance selector**, and so on. These features make the CSS structure more readable and easier to maintain.
+- [Sass](https://sass-lang.com/)
+- [LESS](https://lesscss.org/)
+- [Stylus](https://stylus-lang.com/)
+- [PostCSS](https://postcss.org/)
+- [SCSS](https://sass-lang.com/): Sassy CSS
+
+To use a CSS preprocessor, you must install a **CSS compiler** on your web server; Or use the **CSS preprocessor** to compile on the development environment, and then upload compiled CSS file to the web server.
+
 # DOM(Document Object Model)/文档对象模型
+* https://developer.mozilla.org/en-US/docs/Glossary/DOM
+
+The DOM (Document Object Model) is an **API** that represents and interacts with any HTML or XML-based markup language document. The DOM is **a document model loaded in the browser** and representing the document as a node tree, or **DOM tree**, where each node represents part of the document (e.g., an element, text string, or comment).
+
+The DOM is one of the most-used APIs on the Web because it allows code running in a browser to access and interact with every node in the document. **Nodes can be created, moved, and changed**. **Event listeners** can be added to nodes and triggered on the occurrence of a given event.
 
 # ECMASCript
 see [JavaScript Specification](../language/JavaScript.md#specification)
@@ -86,6 +112,12 @@ See Also
 * https://en.wikipedia.org/wiki/Polyfill_(programming)
 
 Polyfill (provide implementations for) any modern features that are missing in the JavaScript runtime.
+
+# SPA(Single-Page Apps)/单页面应用
+* https://developer.mozilla.org/en-US/docs/Glossary/SPA
+
+# SSG(Static-Site Generation)/静态站点生成
+* https://developer.mozilla.org/en-US/docs/Glossary/SSG
 
 # Transpile/转译
 

@@ -26,3 +26,13 @@
 * Brown, Ethan. **Web Development with Node and Express**. 2019, 2. edition. O'Reilly.
 * Thomas Hunter, I. I. **Distributed Systems with Node.js**. 2020. O’Reilly.
 
+# React
+* [React: Up & Running, 2nd Edition](../frameworks/React/ReactUpandRunning.md)
+* Learning React, 2nd Edition
+* FullStack React
+* The Road to Learn React: Your journey to master plain yet pragmatic React.js by Robin Wieruch
+* React in Action
+* React Native in Action
+* React.js Essentials: A fast-paced journey
+* React Quickly
+* React Cookbook
