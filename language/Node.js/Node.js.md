@@ -24,6 +24,7 @@ npm install json-server
 ```
 
 # See Also
+* [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs): Delightful Node.js packages and resources.
 * [Setting up a Node development environment](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/development_environment): MDN, Express
 * [node.green](https://node.green/): Node.js ECMAScript compatibility tables 
 * [source-map-support](https://github.com/evanw/node-source-map-support): This module provides source map support for stack traces in node via the V8 stack trace API. This package is no longer required as Node 12.12.0 introduced the `--enable-source-maps` flag. (unless you're using the `vm` module, as `--enable-source-maps` does not work with `vm.runInThisContext`).
